@@ -45,8 +45,10 @@ st.divider()
 st.sidebar.header("📄 Resume")
 
 uploaded_file = st.sidebar.file_uploader(
-    "Upload Resume",
-    type=["pdf"]
+    "Upload Resume (PDF)",
+    type=["pdf"],
+    key="resume_uploader",
+    help="Upload your resume in PDF format."
 )
 
 if uploaded_file:
